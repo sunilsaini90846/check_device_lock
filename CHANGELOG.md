@@ -1,3 +1,4 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial release.
+  - Write a method to check the device is secure by any password or biometric authentication.
