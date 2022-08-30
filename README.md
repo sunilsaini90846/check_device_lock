@@ -4,13 +4,21 @@ For Android and iOS to check the device is secure by any passcode or biomatric.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+![Example Image:](https://github.com/sunilsaini90846/check_device_lock/blob/main/example/assets/example_image.jpeg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
-# Feature
+# Method
+
+Call this method to check if the device is secure:
+```
+Future<void> initPlatformState() async {
+    bool value;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    // We also handle the message potentially returning null.
+    try {
+      value = await CheckDeviceLock.isDeviceSecure ?? false;
+    } on PlatformException {
+      value = false;
+    }
+}
+```
