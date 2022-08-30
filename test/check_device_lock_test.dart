@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:check_device_lock/check_device_lock.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('check_device_lock');
+  const MethodChannel channel = MethodChannel('sun_check_device_lock');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
