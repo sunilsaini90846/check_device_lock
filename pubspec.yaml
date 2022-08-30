@@ -1,7 +1,7 @@
 name: check_device_lock
 description: For Android and iOS to check the device is secure by any passcode or biomatric.
 version: 0.0.1
-homepage:
+repository: https://github.com/sunilsaini90846/check_device_lock.git
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
