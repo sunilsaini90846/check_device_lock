@@ -9,13 +9,13 @@ public class SwiftCheckDeviceLockPlugin: NSObject, FlutterPlugin {
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        /// This method is invoked on the UI thread.
-        if call.method == "isDeviceSecure" else {
-            let isDeviceSecure = self?.isDeviceSecure()
-            result(isDeviceProtected)
-        } else {
-            result(FlutterMethodNotImplemented)
-        }
+            /// This method is invoked on the UI thread.
+            if call.method == "isDeviceSecure" {
+                let isDeviceSecure = self.isDeviceSecure()
+                result(isDeviceSecure)
+            } else {
+                result(FlutterMethodNotImplemented)
+            }
     }
     
     /// Method use to get true and false value
